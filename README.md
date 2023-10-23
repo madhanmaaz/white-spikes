@@ -10,6 +10,8 @@
     5. Select auth device Bypass 
     6. Even Captcha etc...
 
+<video src="./scr/demo.mp4"></video>
+
 ![banner](./public/assets/src/banner.jpg)
 
 ![banner](./scr/map.png)
