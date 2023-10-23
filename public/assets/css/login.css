@@ -1,0 +1,51 @@
+body {
+    background: #000;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../src/bg.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.login {
+    width: 300px;
+    text-align: center;
+    background: #000;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.login h2 {
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.login input {
+    width: 100%;
+    color: #fff;
+    border: 2px solid transparent;
+    font-size: 1.1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    margin: .5rem auto;
+    background: #111;
+}
+
+.login input:focus {
+    border-color: #00ff00;
+}
+
+.login input[type='submit']:hover {
+    background: #00ff00;
+    color: #000;
+    cursor: pointer;
+}
+
+.login p {
+    text-transform: capitalize;
+}
+
+.login a {
+    color: #ff3600;
+}

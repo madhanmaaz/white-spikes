@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+
+body {
+    height: 100vh;
+    color: #e5e5e5;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+    color: #00ff00;
+    display: grid;
+    place-items: center;
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+#preloader.active {
+    opacity: 0;
+    transform: rotateX(90deg);
+}
+
+#preloader h3::after {
+    content: '';
+    animation: aniload 2s infinite;
+}
+
+@keyframes aniload {
+    0% {
+        content: '';
+    }
+
+    10% {
+        content: '..';
+    }
+
+    20% {
+        content: '...';
+    }
+
+    30% {
+        content: '....';
+    }
+
+    40% {
+        content: '.....';
+    }
+}
+
+.r-btn {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    color: #e5e5e5;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.r-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.btn {
+    padding: .2rem 1.4rem;
+    border-radius: 6px;
+    color: #e5e5e5;
+    background: #191919;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover {
+    background: #ff7316;
+}
+
+.intro {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(100deg, #ff2600, #5900ff);
+    padding: .2rem;
+    text-transform: uppercase;
+    height: 4vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background: #000000;
+    height: 10vh;
+    border-bottom: 1px solid #535353;
+}
+
+.header .left h2 {
+    color: #ff3600;
+    text-transform: uppercase;
+}
+
+.header .left h2 span {
+    color: #8c00ff;
+    border-bottom: 2px solid #ff3600;
+}
+
+.header .left h6 {
+    color: #00ff00;
+    text-align: right;
+    font-size: .8rem;
+    margin-top: .1rem;
+}
+
+.header .left b {
+    color: #e5e5e5;
+}
+
+.header .right {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+:disabled {
+    background: #520000 !important;
+}
+
+@media(max-width: 800px) {
+    html {
+        font-size: 90%;
+    }
+
+    .login-box {
+        background-position: right;
+    }
+
+    .header {
+        height: 12vh;
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: .3rem 1rem;
+    }
+
+}

