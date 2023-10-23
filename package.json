@@ -1,7 +1,7 @@
 {
   "name": "white-spikes",
   "version": "1.0.0",
-  "description": "Automated tool that allow us to hack accounts with 2FA Bypass.",
+  "description": "World's No.1 😁 Automated Social Media Phishing Tool. Automated tool that allow us to hack accounts with 2FA Bypass.",
   "main": "server.js",
   "scripts": {
     "test": "nodemon server.js",
