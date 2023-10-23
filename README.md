@@ -1,6 +1,8 @@
 
 # WHITE SPIKES - BETA 1.0
 
+![banner](./public/assets/src/banner.jpg)
+
 - World's No.1 😁 Automated Social Media Phishing Tool. Remember This Is Only For Educational Purposes. This Tool Allow Us To Gather Informations Like `USERNAME, PASSWORDS, EMAILs, OTP, TWO-FACTOR-AUTHENDICATION BYPASS, RESEND OTP, ETC`. And Store in Our Database for future. 
     
     1. Username (email, password, mobile number, usernames) Bypass 
@@ -10,9 +12,8 @@
     5. Select auth device Bypass 
     6. Even Captcha etc...
 
-<video src="./scr/demo.mp4"></video>
-
-![banner](./public/assets/src/banner.jpg)
+### DEMO VIDEO
+[![Video Demo](https://img.youtube.com/vi/9L7WnC7Yi_U/0.jpg)](https://www.youtube.com/watch?v=9L7WnC7Yi_U)
 
 ![banner](./scr/map.png)
 
