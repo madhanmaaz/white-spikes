@@ -57,13 +57,13 @@ npm start
 
 ## Configurations
 
-<img src="./scr/config.png" align="right">
-
 [STEP - 1] Change Default Username & Password of white-spikes
 - Default username : `admin`
 - Default password : `admin`
 
 - Edit the file called : `./ssd/config.json`
+- 
+<img src="./scr/config.png">
 
 [STEP - 2] Setting browser
 
