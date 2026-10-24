@@ -1,4 +1,4 @@
-# WHITE SPIKES - 2.0.0
+# WHITE SPIKES - 2.0.0 (v3 coming soon)
 
 - The Best Automatic Social Media Phishing Tool. Recall that this is solely for awareness-raising or educational purposes only. Through the use of this tool, we are able to gather and store data such as usernames, passwords, emails, OTPs, TWO-FACTOR-AUTHENDICATION BYPASSES, RESEND OTPs, etc. And store in our database for later use.
 
